@@ -1,0 +1,15 @@
+image:
+  repository: henria/weather_app_backend
+  tag: "latest"   # auto-updated by GitHub Actions on each push to main
+  pullPolicy: Always
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+
+env:
+  - name: FLASK_ENV
+    value: development

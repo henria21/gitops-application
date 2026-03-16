@@ -1,0 +1,15 @@
+image:
+  repository: henria/weather_app_frontend
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5001
+
+env:
+  - name: BACKEND_URL
+    value: "http://weather-backend-weather-backend:80"
