@@ -1,6 +1,6 @@
 image:
   repository: henria/weather_app_backend
-  tag: "latest"   # auto-updated by GitHub Actions on each push to main
+  tag: "8ee888f08e70031bec731eeb1ed7ed6b4515c1dc"
   pullPolicy: Always
 
 replicaCount: 1
